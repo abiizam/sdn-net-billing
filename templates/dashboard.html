@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Dashboard — SDN NET BILLING{% endblock %}
+{% block content %}
+<h2 class="mb-4">📊 Dashboard</h2>
+
+<div class="row">
+    <div class="col-md-3 mb-3">
+        <div class="card bg-primary text-white">
+            <div class="card-body">
+                <h5>Pelanggan</h5>
+                <h3>0</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-3">
+        <div class="card bg-success text-white">
+            <div class="card-body">
+                <h5>Lunas</h5>
+                <h3>0</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-3">
+        <div class="card bg-warning text-dark">
+            <div class="card-body">
+                <h5>Belum Bayar</h5>
+                <h3>0</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-3">
+        <div class="card bg-danger text-white">
+            <div class="card-body">
+                <h5>Isolir</h5>
+                <h3>0</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-4">
+    <a href="/konfigurasi" class="btn btn-outline-secondary">⚙️ Konfigurasi Sistem</a>
+</div>
+{% endblock %}
